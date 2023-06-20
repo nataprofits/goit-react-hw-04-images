@@ -13,7 +13,7 @@ const Searchbar = ({ onSubmit }) => {
 
   const handleSearchSubmit = e => {
     e.preventDefault();
-    if (!query.trim() === '') {
+    if (query.trim() === '') {
       toast.error('Search field is empty! Please enter a search word.');
       return;
     }
